@@ -22,6 +22,7 @@
   "homepage": "https://github.com/Urucas/html5template",
   "dependencies": {
     "babel": "^4.5.5",
+    "colors": "^1.0.3",
     "fs": "0.0.2"
   },
   "bin": {
