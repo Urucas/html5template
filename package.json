@@ -4,7 +4,7 @@
   "description": "Create a simple html5 template to start using from command line",
   "main": "lib/index.js",
   "scripts": {
-    "test": "node_modules/mocha/bin/mocha test/* --compilers js:6to5/register --t 10s --require mocha-clean"
+    "test": "node_modules/mocha/bin/mocha test/* --compilers js:babel/register --t 10s --require mocha-clean"
   },
   "repository": {
     "type": "git",

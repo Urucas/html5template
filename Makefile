@@ -5,7 +5,7 @@ all: node
 
 node: lib
 	@mkdir -p ./node
-	@cp -r ./assets ./node/assets
+	@cp -r ./lib/assets ./node/assets
 	@for path in lib/*.js; do \
 		file=`basename $$path`; \
 		$(BABEL) "lib/$$file" > "node/$$file"; \
