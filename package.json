@@ -1,9 +1,10 @@
 {
   "name": "html5template",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Create a simple html5 template to start using from command line",
   "main": "lib/index.js",
   "scripts": {
+    "build" : "make clean && make",
     "test": "node_modules/mocha/bin/mocha test/* --compilers js:babel/register --t 10s --require mocha-clean"
   },
   "repository": {
