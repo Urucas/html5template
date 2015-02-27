@@ -1,0 +1,34 @@
+{
+  "name": "html5template",
+  "version": "0.0.1",
+  "description": "Create a simple html5 template to start using from command line",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "node_modules/mocha/bin/mocha test/* --compilers js:6to5/register --t 10s --require mocha-clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Urucas/html5template.git"
+  },
+  "keywords": [
+    "html5",
+    "template"
+  ],
+  "author": "Urucas <hello@urucas.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Urucas/html5template/issues"
+  },
+  "homepage": "https://github.com/Urucas/html5template",
+  "dependencies": {
+    "babel": "^4.5.5",
+    "fs": "0.0.2"
+  },
+  "bin": {
+    "html5template": "./bin/cli"
+  },
+  "devDependencies": {
+    "mocha": "^2.1.0",
+    "mocha-clean": "^0.4.0"
+  }
+}
