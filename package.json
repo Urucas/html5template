@@ -1,10 +1,11 @@
 {
   "name": "html5template",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Create a base html5 template from cli",
   "main": "lib/index.js",
   "scripts": {
-    "test": "node_modules/mocha/bin/mocha test/* --compilers js:babel/register --t 10s --require mocha-clean"
+    "test": "node_modules/mocha/bin/mocha test/* --compilers js:babel/register --t 10s --require mocha-clean",
+    "build" : "make clean && make node"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,8 @@
   "dependencies": {
     "babel": "^4.5.5",
     "colors": "^1.0.3",
-    "fs": "0.0.2"
+    "fs": "0.0.2",
+    "optimist": "^0.6.1"
   },
   "bin": {
     "html5template": "./bin/cli"
