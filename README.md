@@ -1,5 +1,5 @@
 # html5template [![Build Status](https://travis-ci.org/Urucas/html5template.svg?branch=master)](https://travis-ci.org/Urucas/html5template)
-Create a base html5 template from cli
+A simple html5 boilerplate that creates a base html5 template from cli
 ```html
 <!doctype html>
 <html lang="en">
