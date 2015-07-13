@@ -1,9 +1,24 @@
 #!/usr/bin/env node
 
 var html5template = require('../node');
-var args = process.argv.splice(2, process.argv.length);
-var params = {};
-for(var i=0; i<args.length;i+=2){
-	params[args[i].replace(/-/g,'')] = args[i+1];
+var argv = require('optimist')
+  .usage()
+  .options('name', {
+    default: 'index.html',
+    describe: 'html5template name'
+  })
+  .options('path', {
+    default: './',
+    describe: 'template output path'
+  })
+  .argv;
+
+if(argv.help) {
+  console.log([
+    'html5template, the html5 boilerplate',
+    'Usage: html5template --name [name] --path [path]'
+  ].join('\n'))
+  return;
 }
-html5template(params);
+
+html5template(argv);
